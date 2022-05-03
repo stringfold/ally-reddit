@@ -5,10 +5,10 @@ export default class RedditDriverProvider {
 
   public async boot() {
     const Ally = this.app.container.resolveBinding('Adonis/Addons/Ally')
-    const { RedditDriver } = await import('../src/RedditDriver')
+    const { RedditDriverContract } = await import('../src/RedditDriver')
 
     Ally.extend('reddit', (_, __, config, ctx) => {
-      return new RedditDriver(ctx, config)
+      return new RedditDriverContract(ctx, config)
     })
   }
 }

@@ -79,7 +79,7 @@ export type RedditDriverConfig = {
 /**
  * Driver implementation. It is mostly configuration driven except the user calls
  */
-export class RedditDriver extends Oauth2Driver<RedditDriverAccessToken, RedditScopes> {
+export class RedditDriverContract extends Oauth2Driver<RedditDriverAccessToken, RedditScopes> {
   /**
    * The URL for the redirect request. The user will be redirected on this page
    * to authorize the request.

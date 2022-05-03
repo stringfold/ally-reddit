@@ -1,1 +1,1 @@
-export * from './src/RedditDriver'
+export { RedditDriverContract, RedditDriverConfig } from './src/RedditDriver'
