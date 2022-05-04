@@ -239,9 +239,7 @@ export class RedditDriverContract extends Oauth2Driver<RedditDriverAccessToken, 
    *
    * https://github.com/adonisjs/ally/blob/develop/src/Drivers/Google/index.ts#L191-L199
    */
-  public async user(
-    callback?: (request: ApiRequest) => void
-  ): Promise<AllyUserContract<RedditDriverAccessToken>> {
+  public async user(callback?: (request: ApiRequest) => void): Promise<AllyUserContract<RedditDriverAccessToken>> {
     const token = await this.accessToken()
     const request = this.httpClient(this.config.userInfoUrl || this.userInfoUrl)
 

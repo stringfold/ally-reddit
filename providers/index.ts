@@ -1,6 +1,6 @@
 import type { ApplicationContract } from '@ioc:Adonis/Core/Application'
 
-export default class RedditDriverProvider {
+export default class ExtendedAllyDriverProvider {
   constructor(protected app: ApplicationContract) {}
 
   public async boot() {
